@@ -11,6 +11,19 @@ const object4 = { a: 5}; //a:5
 object1.a = 4; //all but obj4 a:4
 //Correct
 
+//On a side note, this pass by reference principle applies to arrays as well 
+
+//example (created by me not andrei): 
+
+const pets = ['dog', 'cats', 'goat']
+
+const listPets = pets;
+
+listPets.push('lion');
+
+console.log('pets', pets)
+console.log('listPets', listPets)
+
 //#3 create two classes: an Animal class and a Mamal class. 
 // create a cow that accepts a name, type and color and has a sound method that moo's her name, type and color. 
 
